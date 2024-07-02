@@ -21,7 +21,7 @@ Quote of the Day was built using the following tools:
 - **Frontend**: HTML, CSS(Tailwind CSS), JavaScript
 - **Backend Development**: Python(Flask)
 ## Conclusion 
-    Quote of the Day! This web application delivers daily inspiration through random quotes and allows users to explore quotes by their favorite authors. With a focus on user interaction and responsive design, it provides a seamless experience across all devices. Check out the video 
+Quote of the Day! This web application delivers daily inspiration through random quotes and allows users to explore quotes by their favorite authors. With a focus on user interaction and responsive design, it provides a seamless experience across all devices. Check out the video 
    
 
 
