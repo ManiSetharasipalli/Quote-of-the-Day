@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block maincontent %}
+<div class="min-h-screen bg-white flex flex-col items-start justify-start pt-20 relative">
+    <div class="bg-white p-6 max-w-lg w-full">
+        <div class="quote-container mb-6">
+            <p id="quote" class="text-gray-700 text-lg italic mb-2"></p>
+            <p id="author" class="text-gray-600 text-md text-right"></p>
+        </div>
+        <div class="absolute top-0 right-0 w-1/3">
+            <div class="bg-white p-4 mt-20 rounded">
+                <h2 class="text-gray-700 font-bold mb-4">Popular Authors</h2>
+                <div class="flex items-center mb-4">
+                    <img src="https://www.shutterstock.com/image-illustration/portrait-illustration-mohandas-karamchand-gandhi-260nw-2310270649.jpg" alt="Mahatma Gandhi" class="w-12 h-12 rounded-full mr-2">
+                    <p class="text-center text-gray-700 font-bold">Mahatma Gandhi</p>
+                </div>
+                <div class="flex items-center mb-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9kU9E98K_YYdBoksyxq5yBFhgSwqNu2YzBQ&s" alt="Epictetus" class="w-12 h-12 rounded-full mr-2">
+                    <p class="text-center text-gray-700 font-bold">Epictetus</p>
+                </div>
+                 <div class="flex items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqCkqmyh8102AHqLrtzSsi1kbeXK9TYqE5IA&s" alt="Nelson Mandela" class="w-12 h-12 rounded-full mr-2">
+                    <p class="text-center text-gray-700 font-bold">Nelson Mandela</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-between">
+            <div class="text-left">
+                <input type="text" id="author-search" placeholder="Search by author" class="border border-lime-500 p-2 rounded mr-2">
+                <ul id="search-results" class="p-2 rounded bg-gray-200 absolute hidden"></ul>
+            </div>
+            <div class="text-right">
+                <button id="new-quote-btn" class="bg-blue-600 text-white py-2 px-4 rounded-full">New Quote</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock maincontent%}

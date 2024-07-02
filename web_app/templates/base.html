@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote of the Day</title>
+    <link rel="icon" href="{{ url_for('static', filename='quote-logo.jpg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='output.css') }}">
+</head>
+{% block content %}
+<body class="font-sans bg-white min-h-screen flex">
+<header class="bg-blue-600 text-white p-3 flex justify-between fixed w-full z-10">
+    <div class="container mx-auto flex justify-start items-center">
+        <img src="{{ url_for('static', filename='quote-logo.jpg') }}" alt="Logo" class="w-10 h-10 rounded-full mr-2">
+        <h1 class="text-3xl font-bold">Quote of the Day</h1>
+    </div>
+    <nav class="flex items-center">
+        {% if username %}
+            <div class="bg-white text-blue-500 px-4 py-2 rounded-full">
+                    <a  href="/profile">{{ username }}</a>
+            </div>
+        {% else %}
+            <a href="/login" class="bg-white text-blue-500 px-4 py-2 rounded-full">Login</a>
+        {% endif %}
+    </nav>
+</header>
+    <main class="container mx-auto">
+        {% block maincontent %}{% endblock maincontent%}
+    </main>
+<script src="{{ url_for('static', filename='app.js') }}"></script>
+{% endblock content %}
+</body>
+</html>

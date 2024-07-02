@@ -1,0 +1,22 @@
+quotes_data = [
+    {"quote_text": "The greatest discovery of my generation is that human beings can alter their lives by altering their attitudes of mind.", "quote_author": "William James"},
+    {"quote_text": "The only journey is the journey within.", "quote_author": "Rainer Maria Rilke"},
+    {"quote_text": "What lies behind us and what lies before us are tiny matters compared to what lies within us.", "quote_author": "Ralph Waldo Emerson"},
+    {"quote_text": "You are the average of the five people you spend the most time with.", "quote_author": "Jim Rohn"},
+    {"quote_text": "The only way to do great work is to love what you do.", "quote_author": "Steve Jobs"},
+    {"quote_text": "Believe you can and you're halfway there.", "quote_author": "Theodore Roosevelt"},
+    {"quote_text": "The only limit to our realization of tomorrow will be our doubts of today.", "quote_author": "Franklin D. Roosevelt"},
+    {"quote_text": "The greatest glory in living lies not in never falling, but in rising every time we fall.", "quote_author": "Nelson Mandela"},
+    {"quote_text": "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light.", "quote_author": "Plato"},
+    {"quote_text": "He is a wise man who does not grieve for the things which he has not, but rejoices for those which he has.", "quote_author": "Epictetus"},
+    {"quote_text": "Knowing others is intelligence; knowing yourself is true wisdom. Mastering others is strength; mastering yourself is true power.", "quote_author": "Lao Tzu"},
+    {"quote_text": "The best way to predict the future is to create it.", "quote_author": "Peter Drucker"},
+    {"quote_text": "Your attitude, not your aptitude, will determine your altitude.", "quote_author": "Zig Ziglar"},
+    {"quote_text": "The secret of getting ahead is getting started.", "quote_author": "Mark Twain"},
+    {"quote_text": "Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful.", "quote_author": "Albert Schweitzer"},
+    {"quote_text": "It does not matter how slowly you go as long as you do not stop.", "quote_author": "Confucius"},
+    {"quote_text": "Strength does not come from physical capacity. It comes from an indomitable will.", "quote_author": "Mahatma Gandhi"},
+    {"quote_text": "Be yourself; everyone else is already taken.", "quote_author": "Oscar Wilde"},
+    {"quote_text": "Change your thoughts and you change your world.", "quote_author": "Norman Vincent Peale"},
+    {"quote_text": "Life is what happens when you're busy making other plans.", "quote_author": "John Lennon"}
+]

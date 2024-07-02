@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<body class="bg-gradient-to-br from-blue-300 to-purple-300 flex flex-col items-center">
+    <header class="mt-8">
+        <a href="/" class="logo flex items-center">
+            <img src="{{ url_for('static', filename='quote-logo.jpg') }}" alt="Chatbot Icon" class="w-10 h-10 rounded-full mr-2">
+        </a>
+    </header>
+   {% block form %}
+    <form id="loginForm" action="/login" method="POST" class="bg-white p-8 rounded-lg shadow-md mt-4">
+        <h2 class="text-2xl font-semibold mb-4">Login</h2>
+        <input type="text" name="username" placeholder="Enter your username" required
+            class="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:border-blue-400">
+        <input type="password" name="password" placeholder="Password" required
+            class="w-full px-4 py-2 mb-4 border rounded-lg focus:outline-none focus:border-blue-400">
+        <input type="submit" value="Login"
+            class="w-full bg-green-500 text-white font-semibold px-4 py-2 rounded-lg cursor-pointer transition-colors duration-300 hover:bg-green-600">
+        <div id="signupLink" class="text-center mt-4">
+            <p class="text-red-500 text-with-gap">{{ error_message }}</p>
+            <p>Don't have an account?<a href="/register"
+                    class="text-blue-500 hover:underline"> Sign Up</a></p>
+        </div>
+    </form>
+    {% endblock form %}
+{% endblock content %}
